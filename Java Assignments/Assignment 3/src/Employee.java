@@ -1,3 +1,4 @@
+
 public class Employee {
     private String name;
     private double hoursWorked;
@@ -9,10 +10,19 @@ public class Employee {
         this.hourlyWage = hourlyWage;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public double getHourlyWage() {
+        return hourlyWage;
+    }
+
     public double calculateWeeklyPay() {
         return hoursWorked * hourlyWage;
     }
-
-    // Getters
-    public String getName() { return name; }
 }
